@@ -11,7 +11,7 @@ export default function Home() {
     <Layout>
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          Welcome to Splash App!
+          Welcome to Splash App 
         </h1>
         <p className="text-lg text-gray-600 mb-8">
           Your one-stop platform for everything AI you need.
