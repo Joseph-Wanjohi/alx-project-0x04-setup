@@ -1,0 +1,27 @@
+import React from "react";
+import Button from "@/components/common/Button";
+import { useRouter } from "next/router";
+import Layout from "@/components/layouts/Layout";
+
+export default function Home() {
+  const router = useRouter();
+  const routeTo = (path: string) => router.push(path);
+
+  return (
+    <Layout>
+      <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center text-center">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          Welcome to Splash App!
+        </h1>
+        <p className="text-lg text-gray-600 mb-8">
+          Your one-stop platform for everything AI you need.
+        </p>
+        <div className="flex gap-6">
+          <Button action={() => routeTo("/generate-text-ai")} buttonLabel="Generate Text" buttonBackgroundColor="blue" />
+          <Button action={() => routeTo("/text-to-image")} buttonLabel="Text to Image" buttonBackgroundColor="green" />
+          <Button action={() => routeTo("/counter-app")} buttonLabel="Contact us" buttonBackgroundColor="orange" />
+        </div>
+      </div>
+    </Layout>
+  );
+}
