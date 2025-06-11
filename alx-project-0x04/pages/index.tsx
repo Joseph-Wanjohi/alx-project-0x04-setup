@@ -35,7 +35,7 @@ export default function Home() {
         />
         <Button
           action={() => routeToNextPage({ pageRoute: "/counter-app" })}
-          buttonLabel="Contact us"
+          buttonLabel="Counter App"
           buttonBackgroundColor="orange"
         />
       </div>
